@@ -119,4 +119,6 @@ N/A
 - [GIN index](gin-index.md)
 
 ### Compare with
-- (TODO) B-Tree vs GIN vs GiST
+- [B-Tree index](btree-index.md) — ordered scans and ranges.
+- [GIN index](gin-index.md) — containment queries in JSONB/arrays.
+- [GiST](gist-index.md) — specialized types (geospatial, ranges).

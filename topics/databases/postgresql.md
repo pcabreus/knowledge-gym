@@ -120,6 +120,6 @@ N/A
 - [JSONB](jsonb.md)
 
 ### Compare with
-- (TODO) DynamoDB
-- (TODO) MySQL
-- (TODO) MongoDB
+- [DynamoDB](dynamodb.md) — key-value at scale vs relational SQL.
+- [MySQL](mysql.md) — similar RDBMS with different features/optimizer.
+- [MongoDB documents](mongodb-documents.md) — document model vs relational constraints.

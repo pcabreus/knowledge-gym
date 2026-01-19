@@ -113,7 +113,7 @@ N/A
 - [PostgreSQL](postgresql.md)
 
 ### Related topics
-- (TODO) B-Tree
-- (TODO) GiST
-- (TODO) selectivity
-- (TODO) EXPLAIN
+- [B-Tree index](btree-index.md)
+- [GiST](gist-index.md)
+- [Selectivity](selectivity.md)
+- [EXPLAIN](explain.md)

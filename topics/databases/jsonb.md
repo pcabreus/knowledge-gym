@@ -112,4 +112,4 @@ N/A
 - [GIN index](gin-index.md)
 
 ### Compare with
-- (TODO) MongoDB documents
+- [MongoDB documents](mongodb-documents.md) — document model vs relational JSONB.
