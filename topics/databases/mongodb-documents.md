@@ -28,8 +28,8 @@ updated_at: 2026-01-19
 - Poor modeling choices can cause duplication or query inefficiency.
 
 ## Scope & Non-goals
-**In scope:** flexible schemas, nested data, document queries.
-**Out of scope / NOT solved by this:** strong relational constraints and complex joins.
+**In scope:** MongoDB-specific document modeling patterns.
+**Out of scope / NOT solved by this:** general document database concepts.
 
 ## Mental model / Intuition
 - Think of each document as a self-contained object, like a JSON blob with structure.
@@ -100,7 +100,7 @@ N/A
 
 ## Links (NO duplication)
 ### Prerequisites
-- (TODO) Document databases overview
+- [Document databases (overview)](document-databases.md)
 
 ### Related topics
 - [JSONB](jsonb.md)

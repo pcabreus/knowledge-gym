@@ -118,6 +118,11 @@ N/A
 
 ### Related topics
 - [JSONB](jsonb.md)
+- [PostgreSQL MVCC](postgresql-mvcc.md)
+- [PostgreSQL vacuum and autovacuum](postgresql-vacuum-autovacuum.md)
+- [PostgreSQL bloat](postgresql-bloat.md)
+- [PostgreSQL isolation levels](postgresql-isolation-levels.md)
+- [PostgreSQL statistics & ANALYZE](postgresql-stats-and-analyze.md)
 
 ### Compare with
 - [DynamoDB](dynamodb.md) — key-value at scale vs relational SQL.
