@@ -31,6 +31,13 @@
 
 ### Redis
 - [Redis](databases/redis.md)
+- [Redis eviction policies](databases/redis-eviction-policies.md)
+- [Redis data types](databases/redis-data-types.md)
+- [Redis Pub/Sub](databases/redis-pub-sub.md)
+- [Redis scaling (scale up and out)](databases/redis-scaling.md)
+- [Redis Streams](databases/redis-streams.md)
+- [Redis persistence (RDB/AOF)](databases/redis-persistence.md)
+- [Redis replication & Sentinel](databases/redis-replication-sentinel.md)
 
 ### SQLite
 - [SQLite](databases/sqlite.md)
