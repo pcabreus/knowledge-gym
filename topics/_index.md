@@ -127,4 +127,11 @@
 - [Capacity planning](operations/capacity-planning.md)
 - [Incident management basics](operations/incident-management-basics.md)
 
+## Quality & Engineering Practices
+- [Software Quality Assurance (SQA)](quality/software-quality-assurance.md)
+- [Testing pyramid](quality/testing-pyramid.md)
+- [Code quality](quality/code-quality.md)
+- [Quality gates (CI/CD)](quality/quality-gates.md)
+- [Clean code](quality/clean-code.md)
+
 ## (Add more categories according to `docs/04-taxonomy.md`)
