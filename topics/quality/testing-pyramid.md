@@ -211,7 +211,7 @@ The testing pyramid is a strategy to balance test types for speed and reliabilit
 ## Links (NO duplication)
 ### Prerequisites
 - [Software Quality Assurance](software-quality-assurance.md)
-- (TODO) Testing fundamentals
+- [Testing fundamentals](testing-fundamentals.md)
 
 ### Related topics
 - [Code quality](code-quality.md)

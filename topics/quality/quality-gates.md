@@ -255,7 +255,7 @@ Quality gates are automated checks in CI/CD that prevent bad code from reaching 
 ### Prerequisites
 - [Software Quality Assurance](software-quality-assurance.md)
 - [Testing pyramid](testing-pyramid.md)
-- (TODO) CI/CD basics
+- [CI/CD basics](ci-cd-basics.md)
 
 ### Related topics
 - [Code quality](code-quality.md)

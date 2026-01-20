@@ -233,8 +233,8 @@ Clean code is code optimized for human readers. It uses meaningful names so you 
 ### Related topics
 - [Testing pyramid](testing-pyramid.md)
 - [Quality gates](quality-gates.md)
-- (TODO) SOLID principles
-- (TODO) Refactoring techniques
+- [SOLID principles](solid-principles.md)
+- [Refactoring techniques](refactoring-techniques.md)
 
 ### Compare with
 - [Code quality](code-quality.md) — Code quality measures structure and correctness; clean code optimizes for readability.

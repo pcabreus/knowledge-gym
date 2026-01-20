@@ -129,9 +129,14 @@
 
 ## Quality & Engineering Practices
 - [Software Quality Assurance (SQA)](quality/software-quality-assurance.md)
+- [Testing fundamentals](quality/testing-fundamentals.md)
 - [Testing pyramid](quality/testing-pyramid.md)
 - [Code quality](quality/code-quality.md)
 - [Quality gates (CI/CD)](quality/quality-gates.md)
 - [Clean code](quality/clean-code.md)
+- [SOLID principles](quality/solid-principles.md)
+- [Design patterns (overview)](quality/design-patterns.md)
+- [Refactoring techniques](quality/refactoring-techniques.md)
+- [CI/CD basics](quality/ci-cd-basics.md)
 
 ## (Add more categories according to `docs/04-taxonomy.md`)

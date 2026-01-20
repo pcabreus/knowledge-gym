@@ -241,8 +241,8 @@ Code quality is about making code easy to read, maintain, and change. We measure
 ## Links (NO duplication)
 ### Prerequisites
 - [Software Quality Assurance](software-quality-assurance.md)
-- (TODO) SOLID principles
-- (TODO) Design patterns
+- [SOLID principles](solid-principles.md)
+- [Design patterns](design-patterns.md)
 
 ### Related topics
 - [Testing pyramid](testing-pyramid.md)

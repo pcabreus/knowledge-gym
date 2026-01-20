@@ -198,7 +198,7 @@ Software Quality Assurance is a multi-layered approach to prevent defects and en
 ### Prerequisites
 - [Reliability basics](../operations/reliability-basics.md)
 - [Observability basics](../operations/observability-basics.md)
-- (TODO) Testing fundamentals
+- [Testing fundamentals](testing-fundamentals.md)
 
 ### Related topics
 - [Testing pyramid](testing-pyramid.md)
