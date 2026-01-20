@@ -221,10 +221,7 @@ Design patterns are reusable solutions to common software design problems. They'
 
 ### Related topics
 - [Code quality](code-quality.md)
-- (TODO) Refactoring techniques
-- (TODO) Strategy pattern (detailed)
-- (TODO) Factory pattern (detailed)
-- (TODO) Observer pattern (detailed)
+- [Refactoring techniques](refactoring-techniques.md)
 
 ### Compare with
 - [SOLID principles](solid-principles.md) — SOLID provides design principles; patterns provide concrete solutions.

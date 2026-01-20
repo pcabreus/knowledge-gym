@@ -275,8 +275,8 @@ SOLID is five design principles for writing maintainable object-oriented code. S
 
 ### Related topics
 - [Testing fundamentals](testing-fundamentals.md)
-- (TODO) Design patterns
-- (TODO) Refactoring techniques
+- [Design patterns](design-patterns.md)
+- [Refactoring techniques](refactoring-techniques.md)
 
 ### Compare with
 - [Clean code](clean-code.md) — Clean code focuses on readability; SOLID focuses on structure and flexibility.

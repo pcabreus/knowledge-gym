@@ -126,6 +126,13 @@
 - [Observability basics](operations/observability-basics.md)
 - [Capacity planning](operations/capacity-planning.md)
 - [Incident management basics](operations/incident-management-basics.md)
+- [Infrastructure as Code (IaC)](operations/infrastructure-as-code.md)
+- [Terraform](operations/terraform.md)
+- [AWS CloudFormation](operations/aws-cloudformation.md)
+- [Blue/green deployments](operations/blue-green-deployments.md)
+- [Canary deployments](operations/canary-deployments.md)
+- [Rolling deployments](operations/rolling-deployments.md)
+- [Feature flags](operations/feature-flags.md)
 
 ## Quality & Engineering Practices
 - [Software Quality Assurance (SQA)](quality/software-quality-assurance.md)

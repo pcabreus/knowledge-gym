@@ -279,9 +279,9 @@ CI/CD automates the path from code commit to production. CI means merging code f
 ### Related topics
 - [Quality gates](quality-gates.md)
 - [Testing pyramid](testing-pyramid.md)
-- (TODO) Infrastructure-as-Code (IaC)
-- (TODO) Blue/green deployments
-- (TODO) Canary deployments
+- [Infrastructure as Code](../operations/infrastructure-as-code.md)
+- [Blue/green deployments](../operations/blue-green-deployments.md)
+- [Canary deployments](../operations/canary-deployments.md)
 
 ### Compare with
 - [Quality gates](quality-gates.md) — Quality gates are the checkpoints within a CI/CD pipeline that enforce quality standards.
