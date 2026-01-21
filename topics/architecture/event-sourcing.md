@@ -119,7 +119,7 @@ N/A
 - [Event-driven architecture](event-driven-basics.md)
 - [Messaging basics](messaging-basics.md)
 - [Data modeling basics](../databases/data-modeling-basics.md)
-- (TODO) CQRS
+- [CQRS](cqrs.md)
 
 ### Related topics
 - [Outbox pattern](outbox-pattern.md)

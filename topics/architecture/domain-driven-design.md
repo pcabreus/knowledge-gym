@@ -122,7 +122,7 @@ N/A
 ### Related topics
 - [Event-driven architecture](event-driven-basics.md)
 - [Event sourcing](event-sourcing.md)
-- (TODO) CQRS
+- [CQRS](cqrs.md)
 
 ### Compare with
 - [Data modeling basics](../databases/data-modeling-basics.md) — DDD models behavior and invariants, not just schema.
