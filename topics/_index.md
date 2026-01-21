@@ -108,7 +108,10 @@
 ## Architecture
 - [Messaging basics](architecture/messaging-basics.md)
 - [Request-response architecture](architecture/request-response.md)
-- [Event-driven basics](architecture/event-driven-basics.md)
+- [Event-driven architecture](architecture/event-driven-basics.md)
+- [Domain-Driven Design (DDD)](architecture/domain-driven-design.md)
+- [Event sourcing](architecture/event-sourcing.md)
+- [Saga pattern](architecture/saga-pattern.md)
 - [Dual-write pattern](architecture/dual-write-pattern.md)
 - [Outbox pattern](architecture/outbox-pattern.md)
 - [Kafka](architecture/kafka.md)
