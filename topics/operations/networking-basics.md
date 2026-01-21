@@ -98,6 +98,12 @@ N/A
 - [Reliability basics](reliability-basics.md)
 
 ### Related topics
+- [Network layers (OSI & TCP/IP)](network-layers.md)
+- [DNS](dns.md)
+- [TCP](tcp.md)
+- [UDP](udp.md)
+- [TLS](tls.md)
+- [HTTP](http.md)
 - [Database client basics](../databases/database-client-basics.md)
 
 ### Compare with

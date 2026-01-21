@@ -21,7 +21,7 @@ updated_at: 2026-01-20
 
 ## Definition
 **What it is:** A deployment strategy that uses two identical production environments where only one serves live traffic at a time, allowing instant switching between versions.  
-**Key terms:** blue environment (current production), green environment (new version), cutover (traffic switch), rollback, zero-downtime deployment, load balancer, DNS switching.
+**Key terms:** blue environment (current production), green environment (new version), cutover (traffic switch), rollback, zero-downtime deployment, load balancer, [DNS](dns.md) switching.
 
 ## Why it matters
 - **Zero downtime:** Users experience no service interruption during deployments.
@@ -34,7 +34,7 @@ updated_at: 2026-01-20
 **In scope:**
 - Blue/green deployment mechanics (two environments, traffic switching).
 - When to use blue/green vs. other strategies.
-- Cutover mechanisms (load balancer, DNS, feature flags).
+- Cutover mechanisms (load balancer, [DNS](dns.md), feature flags).
 
 **Out of scope / NOT solved by this:**
 - Database migrations (separate challenge; requires forward-compatible schemas).
@@ -113,7 +113,7 @@ No one notices the switch because both stages are identical infrastructure.
 - **Shared state issues:** Sessions, caches, queues cause inconsistencies between blue/green.
 - **No smoke tests on green:** Switch to broken environment; discover issues in production.
 - **Premature blue teardown:** Delete blue too soon; can't rollback when issues appear later.
-- **DNS cutover delays:** DNS caching causes gradual switch instead of instant (use load balancer instead).
+- **[DNS](dns.md) cutover delays:** DNS caching causes gradual switch instead of instant (use load balancer instead).
 
 ## Observability (How to detect issues)
 - **Metrics:**
@@ -225,7 +225,7 @@ spec:
   - **Why it's bad:** Issues may appear hours later; can't rollback.
   - **Better approach:** Keep blue running for 24 hours (or longer for critical systems).
 
-- **Anti-pattern:** Using DNS for cutover.
+- **Anti-pattern:** Using [DNS](dns.md) for cutover.
   - **Why it's bad:** DNS caching causes slow, unpredictable switch (not instant).
   - **Better approach:** Use load balancer or service mesh for instant traffic switching.
 

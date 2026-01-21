@@ -72,7 +72,7 @@ You don't skip vitamins because you get annual checkups. Each layer serves a pur
   2. **Integration test:** Test with real database.
      - Test: user record inserted correctly.
      - Test: transaction rolls back on error.
-  3. **E2E test:** Test full flow via HTTP.
+  3. **E2E test:** Test full flow via [HTTP](../operations/http.md).
      - Test: POST /register → 201 response → user can login.
   4. **Edge cases:** Empty inputs, SQL injection attempts, concurrent registrations.
 - **What success looks like:** All tests pass in <10 seconds; production has zero registration bugs in first month.

@@ -20,7 +20,7 @@ updated_at: 2026-01-21
 - Trade-off: extra abstraction layers and upfront design effort.
 
 ## Definition
-**What it is:** An architectural pattern that isolates the application core behind well-defined ports (interfaces), with adapters implementing integrations (DB, HTTP, messaging) at the edges.  
+**What it is:** An architectural pattern that isolates the application core behind well-defined ports (interfaces), with adapters implementing integrations (DB, [HTTP](../operations/http.md), messaging) at the edges.  
 **Key terms:** ports, adapters, primary/secondary adapters, dependency inversion, application core.
 
 ## Why it matters
@@ -50,7 +50,7 @@ updated_at: 2026-01-21
 - **Steps:**
   1) Define inbound ports (use cases) and outbound ports (dependencies).
   2) Keep the core free of frameworks.
-  3) Implement adapters for HTTP, DB, and messaging.
+  3) Implement adapters for [HTTP](../operations/http.md), DB, and messaging.
   4) Wire dependencies with DI and test with in-memory adapters.
 - **What success looks like:** core logic tested without infrastructure and adapters replaceable with minimal changes.
 

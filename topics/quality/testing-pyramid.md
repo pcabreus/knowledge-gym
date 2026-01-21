@@ -129,6 +129,7 @@ The base is wide because unit tests are cheap to write and run. The top is narro
   - Keep test suites fast; slow tests kill developer productivity.
 
 ## Mini example
+Note: The E2E example uses [HTTP](../operations/http.md).
 ```go
 // Unit test (fast, isolated, no DB)
 func TestCalculateDiscount(t *testing.T) {
