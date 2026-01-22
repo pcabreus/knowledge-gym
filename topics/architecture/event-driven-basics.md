@@ -112,11 +112,11 @@ N/A
    - **A:** No; EDA is communication style, event sourcing is a persistence pattern.
 
 ### Quick self-check (5 items)
-- [ ] I can define event-driven architecture.
-- [ ] I can state when to use it.
-- [ ] I can name a trade-off.
-- [ ] I can describe a pitfall.
-- [ ] I can explain observability signals.
+- [x] I can define event-driven architecture.
+- [x] I can state when to use it.
+- [x] I can name a trade-off.
+- [x] I can describe a pitfall.
+- [x] I can explain observability signals.
 
 ## Links (NO duplication)
 ### Prerequisites
