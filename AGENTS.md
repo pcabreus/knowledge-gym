@@ -19,6 +19,7 @@ Build and maintain a **static knowledge base** for long-term learning and interv
 - Index pages:
   - `topics/_index.md` must list topics by category and be updated when new topics are added.
   - `questions/_index.md` must list question sets if any are added.
+   - `practices/logs/_index.md` must list practice sessions and link to their logs.
 
 ## Required topic structure
 Use `templates/topic.template.md`. Not all sections must be filled; keep empty sections with “N/A” only if truly not applicable.
@@ -43,6 +44,9 @@ Follow `docs/05-quality-bar.md`. Prioritize correctness, decision rules, and fai
 - To create a new topic from a raw term, use: `prompts/A-topic-intake.prompt.md`
 - To create MCQs: `prompts/B-mcq-generator.prompt.md`
 - To evaluate open answers: `prompts/C-open-answer-evaluator.prompt.md`
+- For practice tracking updates: `prompts/D-practice-log-manager.prompt.md`
+
+Always use the prompt designed for the action you are performing.
 
 ## Typical agent tasks
 1. Add a new topic:
@@ -55,6 +59,10 @@ Follow `docs/05-quality-bar.md`. Prioritize correctness, decision rules, and fai
    - Add missing trade-offs, failure modes, examples
    - Add “trap questions”
    - Ensure no duplicated explanation; replace with links
+3. Manage practice tracking:
+   - Logs live in `practices/logs/YYYY-MM-DD.<session-name-kebab>.md`
+   - Update `practices/logs/_index.md`, `practices/next.md`, and `practices/plan.md`
+   - Practice contexts can be organized in subfolders under `practices/` (create as needed)
 
 ## Output expectations for agent
 - Always propose file edits as unified diffs or full-file content.

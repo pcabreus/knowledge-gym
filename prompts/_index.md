@@ -1,9 +1,6 @@
-# Topics Index
+# Prompts Index
 
-## Database
-- [PostgreSQL](database/postgresql.md)
-- [Index](database/index.md)
-- [JSONB](database/jsonb.md)
-- [GIN index](database/gin-index.md)
-
-## (Add more categories according to `docs/04-taxonomy.md`)
+- [A-topic-intake.prompt.md](A-topic-intake.prompt.md)
+- [B-mcq-generator.prompt.md](B-mcq-generator.prompt.md)
+- [C-open-answer-evaluator.prompt.md](C-open-answer-evaluator.prompt.md)
+- [D-practice-log-manager.prompt.md](D-practice-log-manager.prompt.md)
