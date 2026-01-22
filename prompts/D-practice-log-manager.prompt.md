@@ -10,7 +10,9 @@ INPUT
 - Context (optional): <CONTEXT_NAME>
 - Topic links: "<RELATIVE_LINK_1, RELATIVE_LINK_2, ...>"
 - Question files used: "<RELATIVE_LINK_1, RELATIVE_LINK_2, ...>"
-- Results (if available): "<PER_QUESTION_RESULTS + SCORES>"
+- Results per question: "<Q1: score X/5, Q2: score Y/5, ...>"
+- My answers (verbatim): "<Q1: answer..., Q2: answer..., ...>"
+- Evaluation feedback: "<STRENGTHS, GAPS, IMPROVEMENTS>"
 - Notes (optional): "<RAW_NOTES>"
 - Session status: <OPEN|CLOSING>
 
@@ -18,14 +20,15 @@ STRICT RULES
 1) Update all practice artifacts under practices/ as the source of truth.
 2) Maintain a logs index file at practices/logs/_index.md with date, session name, result summary, and link to the log file.
 3) Create one log file per session: practices/logs/YYYY-MM-DD.<session-name-kebab>.md.
-4) If Session status is CLOSING, mark the log as Closed and create the next session log when a new session starts.
-5) Include the required log sections (see LOG TEMPLATE below).
-6) If multiple topics are provided, decide whether to mix them in one session or split into topic sections. If a topic was previously evaluated, create a new variant file for that topic rather than repeating past content.
-7) Never repeat the same question across different question sets unless the user explicitly requests it after marking it as failed.
-8) Update practices/next.md with the next topics and questions to study.
-9) Update practices/plan.md with the practice plan and schedule.
-10) If any topic was failed, mark it explicitly as Failed so it can be revisited.
-11) Do not ask the user for extra guidance if the required inputs are present; apply the updates directly based on the prompt rules.
+4) **Store all answers, scores, and evaluation feedback in the log file**, not in question files.
+5) If Session status is CLOSING, mark the log as Closed and prepare next session metadata.
+6) Include the required log sections (see LOG TEMPLATE below).
+7) If multiple topics are provided, organize them logically in the log. If a topic was previously evaluated, note the progression.
+8) **Track failed topics** (score < 3) explicitly in the log and in practices/next.md.
+9) Update practices/next.md with the next topics and questions to study based on failures and gaps.
+10) Update practices/plan.md with the practice plan and schedule.
+11) **Never modify question files** with answers or scores. Question files remain clean.
+12) Do not ask the user for extra guidance if the required inputs are present; apply the updates directly based on the prompt rules.
 
 LOG TEMPLATE (must use these headings)
 # Practice Log
@@ -37,26 +40,41 @@ LOG TEMPLATE (must use these headings)
 - Context: <Context name or N/A>
 
 ## Summary
-<3–6 bullets>
+<3–6 bullets summarizing overall performance>
 
-## Focus areas (to improve)
-<3–6 bullets>
+## Questions and Results
+### <Question file link> — <Topic link>
+- **Score:** <X/5>
+- **My answer:**
+  ```
+  <verbatim answer>
+  ```
+- **Evaluation:**
+  - Strengths: <bullets>
+  - Gaps: <bullets>
+  - Improvements: <bullets>
+- **Model answer:** <BLUF summary>
+- **Key takeaway:** <1 sentence>
 
-## Evidence / Feedback notes
-<2–6 bullets>
+(Repeat for each question)
 
-## Questions and results
-- <Question link> — <Result: correct/incorrect/score> — <Key takeaway>
+## Failed Topics (score < 3)
+- <Topic link> — Score: <X/5> — Gap: <why failed>
+- ...
 
-## Failed topics (if any)
-- <Topic link> — <Why failed / gap>
+## Focus Areas (to improve)
+<3–6 bullets based on gaps and failures>
 
-## Study direction
-- More: <topics/concepts to deepen>
-- Less: <topics/concepts to deprioritize>
+## Evidence / Feedback Notes
+<2–6 bullets from evaluation>
 
-## Next steps
+## Study Direction
+- **More:** <topics/concepts to deepen>
+- **Less:** <topics/concepts to deprioritize>
+
+## Next Steps
 - <Actionable next practice items>
+- <Topics to revisit>
 
 OUTPUT REQUIREMENTS
 - Provide updated file contents for:
@@ -66,3 +84,4 @@ OUTPUT REQUIREMENTS
   - practices/plan.md
 - If Session status is OPEN and the log already exists, update it in place.
 - If Session status is CLOSING, finalize the log and set Status: Closed.
+- **Do not modify question files.**

@@ -11,6 +11,8 @@ INPUT
 - Difficulty: <easy|medium|hard>
 - Number of questions: <N> (must be 5–10)
 - My answers (optional, verbatim): "<PASTE_ANSWERS_BY_Q#>"
+- Session name (required for logging answers/eval): "<SESSION_NAME>"
+- Session date (required for logging answers/eval): "<YYYY-MM-DD>"
 
 SCORING SCALE (0–5)
 0 incorrect, 1 very incomplete, 2 partial with large gaps, 3 correct with gaps, 4 strong with minor gaps, 5 excellent interview-ready.
@@ -27,18 +29,18 @@ RUBRIC (score each 0–5)
 STRICT RULES
 1) Generate 5–10 open-ended questions (no multiple choice).
 2) Vary the angle across questions. Mandatory mix of types:
-	- “What is…?” (definition and boundaries)
-	- “What would be the impact if…?” (consequences)
-	- “Given problem X, what decision would you take?” (contextual decision)
-	- “When to use / when not to use…?” (criteria)
-	- “What is the primary trade-off?” (comparisons)
-3) The very first line of the output MUST be the EXACT prompt line:
-	“I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.”
-4) Keep topic and target focus across all questions, avoiding literal duplication of stems.
-5) If answers are provided, evaluate each question using the rubric below and update the overall evaluation.
-6) If multiple topics are provided, decide whether to mix them in one battery or split into topic sections. If a topic was previously evaluated, you may create a new variant file for that topic rather than repeating past content.
-7) Never repeat the same question across different question sets. Only reuse a question if the user explicitly requests it after marking it as failed.
-8) Learning guidance: if question file paths and answers are provided, update those files with studied metadata (studied, studied_at, score) and update practice logs/next/plan accordingly without asking for extra instructions.
+    - “What is…?” (definition and boundaries)
+    - “What would be the impact if…?” (consequences)
+    - “Given problem X, what decision would you take?” (contextual decision)
+    - “When to use / when not to use…?” (criteria)
+    - “What is the primary trade-off?” (comparisons)
+3) Keep topic and target focus across all questions, avoiding literal duplication of stems.
+4) If answers are provided, evaluate each question using the rubric and store results in the practice log.
+5) If multiple topics are provided, decide whether to mix them in one battery or split into topic sections. If a topic was previously evaluated, you may create a new variant file for that topic rather than repeating past content.
+6) Never repeat the same question across different question sets. Only reuse a question if the user explicitly requests it after marking it as failed.
+7) **Never modify question files with answers, scores, or evaluation text.** Question files remain clean.
+8) **Store all answers, scores, and feedback in the practice log file** at `practices/logs/YYYY-MM-DD.<session-name-kebab>.md`.
+9) **Update practice tracking files** (`practices/logs/_index.md`, `practices/next.md`, `practices/plan.md`) with results and focus areas based on evaluation.
 
 OUTPUT FORMAT
 <FIRST LINE PROMPT>

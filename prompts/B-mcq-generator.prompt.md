@@ -30,7 +30,7 @@ STRICT RULES
 10) Keep topic and target focus across all questions, avoiding literal duplication of stems.
 11) If multiple topics are provided, decide whether to mix them in one battery or split into topic sections. If a topic was previously evaluated, you may create a new variant file for that topic rather than repeating past content.
 12) Never repeat the same question across different question sets. Only reuse a question if the user explicitly requests it after marking it as failed.
-13) Learning guidance: if question file paths and results are provided, update those files with studied metadata (studied, studied_at, score) and update practice logs/next/plan accordingly without asking for extra instructions.
+13) Learning guidance: if question file paths and results are provided, **do not modify question files**. Store answers/scores/evaluation only in `practices/logs/` and update `practices/logs/_index.md`, `practices/next.md`, and `practices/plan.md` accordingly without asking for extra instructions.
 
 OUTPUT FORMAT (repeat per question)
 <FIRST LINE PROMPT>
@@ -49,4 +49,5 @@ Why D is wrong: <1–3 sentences>
 EVALUATION (required at the end)
 - If the user provides test answers, compute the result and update the evaluation.
 - Show: total score, percentage, list of correct and incorrect by question number, and 2–4 study recommendations.
+- Store answers, scores, and feedback in `practices/logs/YYYY-MM-DD.<session-name-kebab>.md` (not in question files).
 - If no answers are provided, indicate how to submit answers for evaluation.
