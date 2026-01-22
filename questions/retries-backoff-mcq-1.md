@@ -6,9 +6,6 @@ difficulty: medium
 timebox_minutes: 4
 created_at: 2026-01-22
 updated_at: 2026-01-22
-studied: true
-studied_at: 2026-01-22
-score: 10/10
 ---
 
 # Retries with backoff and jitter
@@ -39,22 +36,3 @@ D) Never retry and always fail fast.
 - Ignoring time budgets.
 - Retrying non-idempotent operations.
 
-## Evaluation (latest)
-### Performance overview
-- Score: 10/10 (100%)
-- Proficiency level: Expert / Master
-
-### Summary
-- Flawless understanding of retry logic, idempotency constraints, and architectural context.
-
-### Key strengths
-- Correct exponential backoff logic and the role of jitter to prevent thundering herd.
-- Clear understanding that retries must be idempotent, especially under timeouts.
-- Recognizes circuit breakers should override retries during outages.
-- Correct transient error classification (HTTP 503).
-
-### Areas for improvement
-- None identified.
-
-### Next level challenge
-- Study retry budgets and adaptive concurrency control.

@@ -6,8 +6,6 @@ difficulty: medium
 timebox_minutes: 7
 created_at: 2026-01-22
 updated_at: 2026-01-22
-studied: true
-studied_at: 2026-01-22
 ---
 
 # Idempotency for payment requests

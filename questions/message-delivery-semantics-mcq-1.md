@@ -6,8 +6,6 @@ difficulty: hard
 timebox_minutes: 5
 created_at: 2026-01-22
 updated_at: 2026-01-22
-studied: true
-studied_at: 2026-01-22
 ---
 
 # Message delivery semantics: choosing guarantees
