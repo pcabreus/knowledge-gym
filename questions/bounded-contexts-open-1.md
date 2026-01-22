@@ -11,6 +11,7 @@ updated_at: 2026-01-22
 # Bounded contexts for debt collection
 
 ## Prompt
+I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.
 Given entities like `debt_case`, `contact_attempt`, `promise_to_pay`, and `payment_schedule`, propose bounded contexts and their integration contracts.
 
 ## Answer format (what “good” looks like)

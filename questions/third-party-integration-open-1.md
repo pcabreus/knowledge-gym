@@ -11,6 +11,7 @@ updated_at: 2026-01-22
 # Resilient third-party integration
 
 ## Prompt
+I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.
 Design a resilient integration with a voice provider. Include timeouts, retries, circuit breaker, and idempotency. Describe how you classify transient vs permanent errors.
 
 ## Answer format (what “good” looks like)

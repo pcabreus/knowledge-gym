@@ -11,6 +11,7 @@ updated_at: 2026-01-22
 # API and event versioning
 
 ## Prompt
+I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.
 Which change requires a new version rather than a backward-compatible update?
 
 ## Answer format (what “good” looks like)

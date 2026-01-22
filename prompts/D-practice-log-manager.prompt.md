@@ -25,6 +25,7 @@ STRICT RULES
 8) Update practices/next.md with the next topics and questions to study.
 9) Update practices/plan.md with the practice plan and schedule.
 10) If any topic was failed, mark it explicitly as Failed so it can be revisited.
+11) Do not ask the user for extra guidance if the required inputs are present; apply the updates directly based on the prompt rules.
 
 LOG TEMPLATE (must use these headings)
 # Practice Log

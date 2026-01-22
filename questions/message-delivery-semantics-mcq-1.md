@@ -6,11 +6,14 @@ difficulty: hard
 timebox_minutes: 5
 created_at: 2026-01-22
 updated_at: 2026-01-22
+studied: true
+studied_at: 2026-01-22
 ---
 
 # Message delivery semantics: choosing guarantees
 
 ## Prompt
+I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.
 In a pipeline where a consumer writes to Postgres and calls a third-party API, which delivery guarantee is most realistic end-to-end and what design choice makes it safe?
 
 ## Answer format (what “good” looks like)

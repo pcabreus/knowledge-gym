@@ -11,6 +11,7 @@ updated_at: 2026-01-22
 # Sync vs async decision
 
 ## Prompt
+I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.
 For a "thousands of communications per minute" contact platform, decide which flows should be synchronous vs asynchronous and why.
 
 ## Answer format (what “good” looks like)

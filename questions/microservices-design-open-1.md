@@ -11,6 +11,7 @@ updated_at: 2026-01-22
 # Microservices boundaries and communication
 
 ## Prompt
+I will ask these questions in quiz format. Please convert them into an interactive quiz that asks me each question and evaluates my answers.
 Design microservice boundaries for a debt-collection platform and justify sync vs async communication between them. Include versioning and failure isolation.
 
 ## Answer format (what “good” looks like)

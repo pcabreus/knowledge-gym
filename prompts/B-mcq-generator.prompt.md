@@ -30,6 +30,7 @@ STRICT RULES
 10) Keep topic and target focus across all questions, avoiding literal duplication of stems.
 11) If multiple topics are provided, decide whether to mix them in one battery or split into topic sections. If a topic was previously evaluated, you may create a new variant file for that topic rather than repeating past content.
 12) Never repeat the same question across different question sets. Only reuse a question if the user explicitly requests it after marking it as failed.
+13) Learning guidance: if question file paths and results are provided, update those files with studied metadata (studied, studied_at, score) and update practice logs/next/plan accordingly without asking for extra instructions.
 
 OUTPUT FORMAT (repeat per question)
 <FIRST LINE PROMPT>
