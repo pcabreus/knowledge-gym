@@ -19,6 +19,8 @@
 - [Resilience controls — Open 1](resilience-controls-open-1.md)
 - [DLQ & poison messages — MCQ 1](dlq-poison-mcq-1.md)
 - [Third-party integration resilience — Open 1](third-party-integration-open-1.md)
+- [SLI/SLO/SLA — MCQ 1](sli-slo-sla-mcq-1.md)
+- [SLI/SLO/SLA — Open 1](sli-slo-sla-open-1.md)
 
 ## Microservices & communication
 - [Bounded contexts — Open 1](bounded-contexts-open-1.md)

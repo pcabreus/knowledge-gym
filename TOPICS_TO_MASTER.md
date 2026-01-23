@@ -65,7 +65,7 @@ Keep one canonical topic per concept. Avoid duplication by linking.
 - Timeouts: budgets, [Cascading failure](topics/operations/cascading-failure.md)
 - [Bulkheads](topics/operations/bulkheads.md)
 - [Load shedding](topics/operations/load-shedding.md)
-- Error budgets; SLI/SLO vs SLA
+- [Error budgets](topics/operations/error-budgets.md); [Service Level Indicator (SLI)](topics/operations/service-level-indicator.md) / [Service Level Objective (SLO)](topics/operations/service-level-objective.md) vs [Service Level Agreement (SLA)](topics/operations/service-level-agreement.md)
 - Incident management lifecycle; runbooks
 - Incident-driven improvements
 

@@ -16,12 +16,12 @@ updated_at: 2026-01-19
 
 ## TL;DR (BLUF)
 - Reliability is about consistent, predictable system behavior.
-- Use SLIs/SLOs to measure and manage reliability.
+- Use [Service Level Indicators (SLIs)](service-level-indicator.md) and [Service Level Objectives (SLOs)](service-level-objective.md) to measure and manage reliability.
 - Trade-off: higher reliability often costs more.
 
 ## Definition
 **What it is:** The likelihood a system performs correctly over time.
-**Key terms:** SLI, SLO, error budget.
+**Key terms:** [Service Level Indicator (SLI)](service-level-indicator.md), [Service Level Objective (SLO)](service-level-objective.md), [Error budgets](error-budgets.md).
 
 ## Why it matters
 - Reliability affects user trust and business outcomes.
@@ -41,7 +41,7 @@ updated_at: 2026-01-19
 
 ## How I would use it (practical)
 - **Context:** API uptime goals.
-- **Steps:** define SLO → monitor → act on error budget.
+- **Steps:** define SLO → monitor → act on [Error budgets](error-budgets.md).
 - **What success looks like:** stable uptime and clear trade-offs.
 
 ## Trade-offs & Alternatives
@@ -62,8 +62,8 @@ updated_at: 2026-01-19
 
 ## Implementation notes (if applicable)
 - **Checklist**
-  - [ ] Define SLIs
-  - [ ] Set SLOs
+   - [ ] Define [Service Level Indicators (SLIs)](service-level-indicator.md)
+   - [ ] Set [Service Level Objectives (SLOs)](service-level-objective.md)
 
 ## Mini example (if applicable)
 N/A
@@ -75,7 +75,7 @@ N/A
 
 ## Interview readiness
 ### “Explain it like I’m teaching”
-- Reliability is the ability of a system to behave correctly over time. Use SLIs/SLOs and error budgets to manage it.
+- Reliability is the ability of a system to behave correctly over time. Use SLIs/SLOs and [Error budgets](error-budgets.md) to manage it.
 
 ### Trap questions (with answers)
 1) **Q:** Is 100% uptime achievable?
@@ -90,7 +90,7 @@ N/A
 - [ ] I can explain SLIs/SLOs.
 - [ ] I can name a trade-off.
 - [ ] I can describe a pitfall.
-- [ ] I can explain error budgets.
+- [ ] I can explain [Error budgets](error-budgets.md).
 
 ## Links (NO duplication)
 ### Prerequisites
@@ -99,6 +99,10 @@ N/A
 ### Related topics
 - [Networking basics](networking-basics.md)
 - [Availability basics](availability-basics.md)
+- [Service Level Indicator (SLI)](service-level-indicator.md)
+- [Service Level Objective (SLO)](service-level-objective.md)
+- [Service Level Agreement (SLA)](service-level-agreement.md)
+- [Error budgets](error-budgets.md)
 
 ### Compare with
 - [Availability basics](availability-basics.md)

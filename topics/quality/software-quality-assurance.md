@@ -21,7 +21,7 @@ updated_at: 2026-01-20
 
 ## Definition
 **What it is:** A systematic set of practices, processes, and tools to prevent defects, ensure correctness, and maintain reliability throughout the software development lifecycle.  
-**Key terms:** quality gates, defect prevention, test coverage, static analysis, SLI/SLO (Service Level Indicator/Objective), runbook, definition of done.
+**Key terms:** quality gates, defect prevention, test coverage, static analysis, [Service Level Indicator (SLI)](../operations/service-level-indicator.md), [Service Level Objective (SLO)](../operations/service-level-objective.md), runbook, definition of done.
 
 ## Why it matters
 - **Prevents production incidents:** Catching defects early is 10-100x cheaper than fixing them in production.
@@ -33,11 +33,11 @@ updated_at: 2026-01-20
 **In scope:**
 - Multi-dimensional quality: code, tests, operations, architecture, process.
 - Preventive practices (gates, reviews, automation).
-- Measurable quality signals (SLIs, error budgets, metrics).
+- Measurable quality signals ([Service Level Indicators (SLIs)](../operations/service-level-indicator.md), [Error budgets](../operations/error-budgets.md), metrics).
 
 **Out of scope / NOT solved by this:**
 - Product-market fit or feature prioritization (quality ≠ "right features").
-- Zero defects (impossible; manage acceptable failure rates with SLOs).
+- Zero defects (impossible; manage acceptable failure rates with [Service Level Objectives (SLOs)](../operations/service-level-objective.md)).
 
 ## Mental model / Intuition
 Think of quality as **defense in depth**:
@@ -112,7 +112,7 @@ No single layer is perfect; quality comes from the combination.
   - [ ] Set up CI with quality gates (linters, tests, security scans).
   - [ ] Implement testing pyramid (many unit, fewer integration, critical E2E).
   - [ ] Add observability to production systems (logs, metrics, traces).
-  - [ ] Establish SLIs/SLOs and error budgets.
+  - [ ] Establish [Service Level Indicators (SLIs)](../operations/service-level-indicator.md), [Service Level Objectives (SLOs)](../operations/service-level-objective.md), and [Error budgets](../operations/error-budgets.md).
   - [ ] Create runbooks for top 3 failure modes.
   - [ ] Require code reviews with checklist.
   - [ ] Use canary or blue/green deploys for risk mitigation.
@@ -179,7 +179,7 @@ Software Quality Assurance is a multi-layered approach to prevent defects and en
    - **A:** Not necessarily. Coverage is a signal of what's *not* tested, but doesn't measure test quality. You can have 90% coverage with tests that don't assert behavior or cover failure modes. Focus on testing critical paths and edge cases, not hitting a coverage number.
 
 3) **Q:** Should we fix all bugs before shipping?
-   - **A:** No. Use risk-based prioritization: critical bugs (data loss, security) block releases; minor bugs (cosmetic issues) can ship with known trade-offs. Define your quality bar with SLOs—don't aim for zero defects, aim for acceptable failure rates.
+  - **A:** No. Use risk-based prioritization: critical bugs (data loss, security) block releases; minor bugs (cosmetic issues) can ship with known trade-offs. Define your quality bar with SLOs—don't aim for zero defects, aim for acceptable failure rates.
 
 4) **Q:** Who owns quality—developers or QA?
    - **A:** Everyone. Developers write tests and own code quality; QA (if present) designs test strategies and catches gaps. Quality is a team responsibility, not a handoff.

@@ -63,7 +63,7 @@ updated_at: 2026-01-19
 
 ## Implementation notes (if applicable)
 - **Checklist**
-  - [ ] Define SLIs
+   - [ ] Define [Service Level Indicators (SLIs)](../operations/service-level-indicator.md)
   - [ ] Measure before/after
 
 ## Mini example (if applicable)

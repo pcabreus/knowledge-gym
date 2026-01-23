@@ -63,7 +63,7 @@ updated_at: 2026-01-19
 
 ## Implementation notes (if applicable)
 - **Checklist**
-  - [ ] Define SLIs
+   - [ ] Define [Service Level Indicators (SLIs)](service-level-indicator.md)
   - [ ] Instrument critical paths
 
 ## Mini example (if applicable)
