@@ -25,10 +25,19 @@ STRICT RULES
 6) Include the required log sections (see LOG TEMPLATE below).
 7) If multiple topics are provided, organize them logically in the log. If a topic was previously evaluated, note the progression.
 8) **Track failed topics** (score < 3) explicitly in the log and in practices/next.md.
-9) Update practices/next.md with the next topics and questions to study based on failures and gaps.
-10) Update practices/plan.md with the practice plan and schedule.
-11) **Never modify question files** with answers or scores. Question files remain clean.
-12) Do not ask the user for extra guidance if the required inputs are present; apply the updates directly based on the prompt rules.
+9) practices/plan.md is the **source of truth** for question status and study direction.
+10) Update practices/plan.md to reflect the current plan and question status:
+  - Include **Today study topics** (the topics to study now).
+  - Include **Question status** with Completed vs Pending.
+  - Keep goals and planned sessions aligned with failures and gaps.
+11) Update practices/next.md as a **view derived from practices/plan.md**:
+  - Mirror Completed vs Pending questions from plan.
+  - Keep **Failed topics to revisit** in sync with questions scored < 3.
+  - Keep next topics/questions aligned with Today study topics and pending items.
+12) Update practices/next.md with the next topics and questions to study based on failures and gaps.
+13) Update practices/plan.md with the practice plan and schedule.
+14) **Never modify question files** with answers or scores. Question files remain clean.
+15) Do not ask the user for extra guidance if the required inputs are present; apply the updates directly based on the prompt rules.
 
 LOG TEMPLATE (must use these headings)
 # Practice Log
