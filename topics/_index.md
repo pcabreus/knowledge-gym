@@ -137,6 +137,8 @@
 - [Availability basics](operations/availability-basics.md)
 - [Observability basics](operations/observability-basics.md)
 - [Capacity planning](operations/capacity-planning.md)
+- [Bulkheads](operations/bulkheads.md)
+- [Load shedding](operations/load-shedding.md)
 - [Incident management basics](operations/incident-management-basics.md)
 - [Infrastructure as Code (IaC)](operations/infrastructure-as-code.md)
 - [Terraform](operations/terraform.md)

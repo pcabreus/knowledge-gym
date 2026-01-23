@@ -21,7 +21,7 @@ updated_at: 2026-01-23
 
 ## Definition
 **What it is:** A flow-control mechanism that intentionally slows, buffers, or rejects work when consumers are overloaded, so the system stays within safe capacity bounds.  
-**Key terms:** bounded concurrency, queue depth, load shedding, graceful degradation, consumer lag.
+**Key terms:** bounded concurrency, queue depth, [Load shedding](../operations/load-shedding.md), graceful degradation, consumer lag.
 
 ## Why it matters
 - Prevents cascading failures when upstream producers outpace downstream capacity.
@@ -158,14 +158,16 @@ func Enqueue(job Job) error {
 - [Timeouts](../operations/timeouts.md)
 - [Retries, exponential backoff, and jitter](../operations/retries-and-backoff.md)
 - [Circuit breaker](../operations/circuit-breaker.md)
+- [Load shedding](../operations/load-shedding.md)
+- [Bulkheads](../operations/bulkheads.md)
 - [Kafka](../architecture/kafka.md)
 - (TODO) SQS/SNS
 - (TODO) Rate limiting
-- (TODO) Load shedding
 
 ### Compare with
 - [Circuit breaker](../operations/circuit-breaker.md) — breaker blocks calls to a failing dependency; backpressure limits overall load.
 - [Retries, exponential backoff, and jitter](../operations/retries-and-backoff.md) — retries add load; backpressure limits it.
+- [Load shedding](../operations/load-shedding.md) — shedding drops/degrades work; backpressure slows or queues it.
 
 ## Notes / Inbox (optional)
 - N/A

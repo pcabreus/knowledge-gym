@@ -114,6 +114,8 @@ N/A
 
 ### Related topics
 - [Third-party integration resilience](third-party-integration-resilience.md)
+- [Bulkheads](bulkheads.md)
+- [Load shedding](load-shedding.md)
 
 ### Compare with
 - [Timeouts](timeouts.md) — timeouts bound one call; a breaker governs many calls over time.

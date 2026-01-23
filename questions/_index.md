@@ -14,6 +14,9 @@
 - [Circuit breaker — MCQ 1](circuit-breaker-mcq-1.md)
 - [Backpressure — MCQ 1](backpressure-mcq-1.md)
 - [Backpressure — Open 1](backpressure-open-1.md)
+- [Load shedding — MCQ 1](load-shedding-mcq-1.md)
+- [Bulkheads — MCQ 1](bulkheads-mcq-1.md)
+- [Resilience controls — Open 1](resilience-controls-open-1.md)
 - [DLQ & poison messages — MCQ 1](dlq-poison-mcq-1.md)
 - [Third-party integration resilience — Open 1](third-party-integration-open-1.md)
 

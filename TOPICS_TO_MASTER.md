@@ -61,7 +61,8 @@ Keep one canonical topic per concept. Avoid duplication by linking.
 - Retries: what/when to retry, when not to retry
 - Circuit breaker: states, thresholds, half-open behavior
 - Timeouts: budgets, cascading failures
-- Bulkheads, load shedding (conceptual)
+- [Bulkheads](topics/operations/bulkheads.md)
+- [Load shedding](topics/operations/load-shedding.md)
 - Error budgets; SLI/SLO vs SLA
 - Incident management lifecycle; runbooks
 - Incident-driven improvements
