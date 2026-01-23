@@ -40,7 +40,7 @@ updated_at: 2026-01-19
 - You want Redis-native queues without a separate broker.
 ### Avoid it when
 - You need exactly-once semantics or multi-region durability.
-- You need complex routing and backpressure across many topics.
+- You need complex routing and [Backpressure](../system-design/backpressure.md) across many topics.
 
 ## How I would use it (practical)
 - **Context:** Order events processed by multiple worker groups.
@@ -59,7 +59,7 @@ updated_at: 2026-01-19
 ## Failure modes & Pitfalls
 - Not trimming streams, leading to unbounded memory growth.
 - Unacked pending entries that never get retried.
-- Using streams without backpressure controls.
+- Using streams without [Backpressure](../system-design/backpressure.md) controls.
 
 ## Observability (How to detect issues)
 - **Metrics:** stream length, consumer lag, pending entries count, memory usage.

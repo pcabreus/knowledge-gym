@@ -66,7 +66,7 @@ updated_at: 2026-01-22
 ## Failure modes & Pitfalls
 - Retrying permanent errors (400, auth, schema) → wasted capacity.
 - No idempotency when provider times out after processing → double actions.
-- No rate limiting / backpressure → self-inflicted 429 storm.
+- No rate limiting / [Backpressure](../system-design/backpressure.md) → self-inflicted 429 storm.
 
 ## Observability (How to detect issues)
 - **Metrics:** error rate by provider & error class, p95/p99 latency, retry counts, breaker state.

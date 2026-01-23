@@ -34,7 +34,7 @@ Keep one canonical topic per concept. Avoid duplication by linking.
 - Load balancing: L4 vs L7, sticky sessions, health checks
 - Partitioning & scaling: sharding, partition keys, consistent hashing
 - Caching: TTL, invalidation, cache-aside vs write-through, short-lived caching
-- Backpressure: bounded concurrency, queues, overload protection, graceful degradation
+- [Backpressure](topics/system-design/backpressure.md): bounded concurrency, queues, overload protection, graceful degradation
 - Consistency models: strong vs eventual, read-after-write, monotonic reads
 - CAP theorem (practical)
 

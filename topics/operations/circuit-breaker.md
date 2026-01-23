@@ -58,7 +58,7 @@ updated_at: 2026-01-22
 - **Cons / Risks:** false opens cause avoidable failures; requires tuning.
 
 ### Alternatives
-- **Backpressure / load shedding:** stop accepting new work under overload (see (TODO) Backpressure).
+- **[Backpressure](../system-design/backpressure.md) / load shedding:** stop accepting new work under overload.
 - **Queue-based async:** remove dependency from request path.
 - **How to choose:** if dependency is external and flaky, breaker is usually worth it.
 
@@ -119,4 +119,4 @@ N/A
 - [Timeouts](timeouts.md) — timeouts bound one call; a breaker governs many calls over time.
 
 ## Notes / Inbox (optional)
-- (TODO) Create Backpressure topic and link it here.
+- N/A

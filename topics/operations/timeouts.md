@@ -84,7 +84,7 @@ N/A
 ## Common anti-patterns
 - **Anti-pattern:** Increase timeouts to “fix” failures.
   - **Why it’s bad:** hides overload and makes incidents worse.
-  - **Better approach:** add backpressure, retries with budgets, and breakers.
+  - **Better approach:** add [Backpressure](../system-design/backpressure.md), retries with budgets, and breakers.
 
 ## Interview readiness
 ### “Explain it like I’m teaching”

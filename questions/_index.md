@@ -12,6 +12,7 @@
 - [Retries & backoff — MCQ 1](retries-backoff-mcq-1.md)
 - [Timeouts — MCQ 1](timeouts-mcq-1.md)
 - [Circuit breaker — MCQ 1](circuit-breaker-mcq-1.md)
+- [Backpressure — MCQ 1](backpressure-mcq-1.md)
 - [DLQ & poison messages — MCQ 1](dlq-poison-mcq-1.md)
 - [Third-party integration resilience — Open 1](third-party-integration-open-1.md)
 
