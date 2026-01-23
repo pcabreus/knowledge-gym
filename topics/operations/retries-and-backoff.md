@@ -21,7 +21,7 @@ updated_at: 2026-01-22
 
 ## Definition
 **What it is:** A strategy to re-attempt failed operations with delays that grow over time.
-**Key terms:** exponential backoff, jitter, retry budget, transient error, retry storm.
+**Key terms:** exponential backoff, jitter, [Retry budgets](retry-budgets.md), transient error, retry storm.
 
 ## Why it matters
 - Transient failures (network blips, overload) are normal; retries can recover.
@@ -116,6 +116,8 @@ N/A
 - [Circuit breaker](circuit-breaker.md)
 - [DLQ & poison messages](dlq-and-poison-messages.md)
 - [HTTP](http.md)
+- [Retry budgets](retry-budgets.md)
+- [Request hedging](request-hedging.md)
 
 ### Compare with
 - [Circuit breaker](circuit-breaker.md) — backoff retries still call the dependency; a breaker stops calling it.

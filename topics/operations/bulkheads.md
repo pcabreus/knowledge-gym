@@ -127,6 +127,7 @@ noncritical_pool = 10 connections
 - [Backpressure](../system-design/backpressure.md)
 - [Load shedding](load-shedding.md)
 - [Timeouts](timeouts.md)
+- [Adaptive concurrency](adaptive-concurrency.md)
 
 ### Compare with
 - [Circuit breaker](circuit-breaker.md) — breaker stops unhealthy calls; bulkheads isolate capacity.

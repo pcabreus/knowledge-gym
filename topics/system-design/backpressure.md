@@ -51,7 +51,7 @@ updated_at: 2026-01-23
   1) Set bounded concurrency per worker group.
   2) Cap queue depth and reject/redirect excess load.
   3) Degrade responses (e.g., partial results) when saturated.
-  4) Add explicit retry budgets to avoid load amplification.
+  4) Add explicit [Retry budgets](../operations/retry-budgets.md) to avoid load amplification.
 - **What success looks like:** stable p95 latency and bounded queue lag under peak traffic.
 
 ## Trade-offs & Alternatives
@@ -78,7 +78,7 @@ updated_at: 2026-01-23
 - **Checklist**
   - [ ] Define safe concurrency and queue limits per dependency
   - [ ] Decide rejection vs delay vs degrade
-  - [ ] Enforce retry budgets to avoid amplification
+  - [ ] Enforce [Retry budgets](../operations/retry-budgets.md) to avoid amplification
   - [ ] Add per-tenant or per-route isolation
 - **Go (practical)**
   - Use bounded goroutine pools, semaphores, or buffered channels.

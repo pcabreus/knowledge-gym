@@ -53,7 +53,9 @@ Keep one canonical topic per concept. Avoid duplication by linking.
 - SQS/SNS (incl. FIFO): ordering, dedup, visibility timeout, DLQ
 - RabbitMQ vs Kafka (conceptual differences)
 - Outbox pattern, CDC concepts
-- Retry strategy: exponential backoff, jitter, retry budgets
+- Retry strategy: exponential backoff, jitter, [Retry budgets](topics/operations/retry-budgets.md)
+- [Adaptive concurrency](topics/operations/adaptive-concurrency.md)
+- [Request hedging](topics/operations/request-hedging.md)
 - DLQ operations: replay process + RCA workflow
 
 ## F) Resilience & reliability engineering
