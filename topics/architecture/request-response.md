@@ -48,13 +48,13 @@ updated_at: 2026-01-19
 ## Trade-offs & Alternatives
 ### Trade-offs
 - **Pros:** simplicity and immediate response.
-- **Cons / Risks:** coupling and cascading failures.
+- **Cons / Risks:** coupling and [Cascading failure](../operations/cascading-failure.md).
 ### Alternatives
 - **Messaging:** async processing.
 - **How to choose:** use request-response for strict latency requirements.
 
 ## Failure modes & Pitfalls
-- Cascading failures due to synchronous dependencies.
+- [Cascading failure](../operations/cascading-failure.md) due to synchronous dependencies.
 
 ## Observability (How to detect issues)
 - **Metrics:** latency, error rate.

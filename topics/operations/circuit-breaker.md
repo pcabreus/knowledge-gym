@@ -15,7 +15,7 @@ updated_at: 2026-01-22
 # Circuit Breaker
 
 ## TL;DR (BLUF)
-- A circuit breaker stops calling a failing dependency to prevent cascading failure.
+- A circuit breaker stops calling a failing dependency to prevent [Cascading failure](cascading-failure.md).
 - It complements [Timeouts](timeouts.md) and [Retries](retries-and-backoff.md).
 - Trade-off: you may fail requests that *could* have succeeded.
 
@@ -90,7 +90,7 @@ N/A
 
 ## Interview readiness
 ### “Explain it like I’m teaching”
-- A circuit breaker fails fast when a dependency is unhealthy, preventing your service from wasting resources and cascading failures, and periodically probes to recover.
+- A circuit breaker fails fast when a dependency is unhealthy, preventing your service from wasting resources and [Cascading failure](cascading-failure.md), and periodically probes to recover.
 
 ### Trap questions (with answers)
 1) **Q:** Should you use retries *and* a circuit breaker?

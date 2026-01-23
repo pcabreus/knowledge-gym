@@ -24,7 +24,7 @@ updated_at: 2026-01-23
 **Key terms:** bounded concurrency, queue depth, [Load shedding](../operations/load-shedding.md), graceful degradation, consumer lag.
 
 ## Why it matters
-- Prevents cascading failures when upstream producers outpace downstream capacity.
+- Prevents [Cascading failure](../operations/cascading-failure.md) when upstream producers outpace downstream capacity.
 - Turns “slow meltdown” into controlled rejection or degraded service.
 
 ## Scope & Non-goals

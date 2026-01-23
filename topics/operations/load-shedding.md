@@ -16,7 +16,7 @@ updated_at: 2026-01-23
 
 ## TL;DR (BLUF)
 - Load shedding intentionally rejects or degrades work when demand exceeds safe capacity.
-- Use it to protect latency SLOs and avoid cascading failure.
+- Use it to protect latency SLOs and avoid [Cascading failure](cascading-failure.md).
 - Trade-off: you drop or degrade requests to keep the system stable.
 
 ## Definition

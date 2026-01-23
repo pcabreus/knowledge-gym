@@ -51,7 +51,7 @@ updated_at: 2026-01-22
   3) Add [Circuit breaker](circuit-breaker.md) with half-open probing.
   4) Use [Idempotency](idempotency.md): idempotency keys, dedup store, and unique constraints.
   5) For async workflows, route permanent failures to [DLQ & poison messages](dlq-and-poison-messages.md).
-- **What success looks like:** provider outages degrade gracefully and do not cause cascading failures.
+- **What success looks like:** provider outages degrade gracefully and do not cause [Cascading failure](cascading-failure.md).
 
 ## Trade-offs & Alternatives
 ### Trade-offs

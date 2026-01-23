@@ -137,6 +137,7 @@
 - [Availability basics](operations/availability-basics.md)
 - [Observability basics](operations/observability-basics.md)
 - [Capacity planning](operations/capacity-planning.md)
+- [Cascading failure](operations/cascading-failure.md)
 - [Bulkheads](operations/bulkheads.md)
 - [Load shedding](operations/load-shedding.md)
 - [Incident management basics](operations/incident-management-basics.md)

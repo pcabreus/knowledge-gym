@@ -25,7 +25,7 @@ updated_at: 2026-01-22
 
 ## Why it matters
 - Transient failures (network blips, overload) are normal; retries can recover.
-- Bad retries create thundering herds and cascading failures.
+- Bad retries create thundering herds and [Cascading failure](cascading-failure.md).
 
 ## Scope & Non-goals
 **In scope:** client-side retries for HTTP and message processing.

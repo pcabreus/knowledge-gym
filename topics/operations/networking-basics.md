@@ -25,7 +25,7 @@ updated_at: 2026-01-19
 
 ## Why it matters
 - Network behavior impacts database connectivity and performance.
-- Misconfigured timeouts cause cascading failures.
+- Misconfigured timeouts cause [Cascading failure](cascading-failure.md).
 
 ## Scope & Non-goals
 **In scope:** basic networking concepts.

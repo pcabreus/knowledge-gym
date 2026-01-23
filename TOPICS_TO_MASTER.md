@@ -60,7 +60,7 @@ Keep one canonical topic per concept. Avoid duplication by linking.
 - Idempotency (HTTP + message processing)
 - Retries: what/when to retry, when not to retry
 - Circuit breaker: states, thresholds, half-open behavior
-- Timeouts: budgets, cascading failures
+- Timeouts: budgets, [Cascading failure](topics/operations/cascading-failure.md)
 - [Bulkheads](topics/operations/bulkheads.md)
 - [Load shedding](topics/operations/load-shedding.md)
 - Error budgets; SLI/SLO vs SLA

@@ -16,7 +16,7 @@ updated_at: 2026-01-23
 
 ## TL;DR (BLUF)
 - Bulkheads isolate resources so a failure in one component doesn’t sink the whole system.
-- Use them to prevent “noisy neighbor” and cascading failures.
+- Use them to prevent “noisy neighbor” and [Cascading failure](cascading-failure.md).
 - Trade-off: capacity fragmentation and higher operational complexity.
 
 ## Definition

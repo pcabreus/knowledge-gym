@@ -63,7 +63,7 @@ updated_at: 2026-01-22
 
 ## Failure modes & Pitfalls
 - Splitting by technical layers (API/DB) instead of domain.
-- Excessive synchronous calls → cascading failures.
+- Excessive synchronous calls → [Cascading failure](../operations/cascading-failure.md).
 - Contract changes without versioning.
 
 ## Observability (How to detect issues)

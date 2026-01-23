@@ -54,7 +54,7 @@ updated_at: 2026-01-22
 ## Trade-offs & Alternatives
 ### Trade-offs
 - **Pros (sync):** simple semantics, immediate consistency.
-- **Cons (sync):** tight coupling, cascading failures.
+- **Cons (sync):** tight coupling, [Cascading failure](../operations/cascading-failure.md).
 - **Pros (async):** decoupling, resilience, scalability.
 - **Cons (async):** eventual consistency, duplicates, harder debugging.
 
@@ -63,7 +63,7 @@ updated_at: 2026-01-22
 - **How to choose:** default to sync for user-critical decisions, async for fan-out.
 
 ## Failure modes & Pitfalls
-- Sync chains across many services → timeouts and cascading failures.
+- Sync chains across many services → timeouts and [Cascading failure](../operations/cascading-failure.md).
 - Async pipelines without idempotency or DLQs → duplicate side effects and backlog.
 
 ## Observability (How to detect issues)

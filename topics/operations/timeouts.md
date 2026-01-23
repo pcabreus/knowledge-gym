@@ -25,7 +25,7 @@ updated_at: 2026-01-22
 
 ## Why it matters
 - Without timeouts, latency and resource usage grow unbounded under failure.
-- Timeouts enable predictable tail latency and prevent cascading failures.
+- Timeouts enable predictable tail latency and prevent [Cascading failure](cascading-failure.md).
 
 ## Scope & Non-goals
 **In scope:** timeouts for HTTP calls, DB calls, message processing.
@@ -88,7 +88,7 @@ N/A
 
 ## Interview readiness
 ### “Explain it like I’m teaching”
-- Timeouts are a protective boundary: they stop stuck work, limit cascading failure, and force you to allocate an explicit latency budget.
+- Timeouts are a protective boundary: they stop stuck work, limit [Cascading failure](cascading-failure.md), and force you to allocate an explicit latency budget.
 
 ### Trap questions (with answers)
 1) **Q:** If you add retries, should you increase timeouts?
@@ -99,7 +99,7 @@ N/A
    - **A:** No; if work continues after timeout, you still burn resources and can duplicate side effects.
 
 ### Quick self-check (5 items)
-- [ ] I can explain why timeouts prevent cascading failures.
+- [ ] I can explain why timeouts prevent [Cascading failure](cascading-failure.md).
 - [ ] I can define a time budget and allocate it.
 - [ ] I can connect timeouts with retries.
 - [ ] I can propose metrics for timeouts.
