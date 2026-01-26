@@ -26,4 +26,4 @@
 - [Bounded contexts — Open 1](bounded-contexts-open-1.md)
 - [Microservices design — Open 1](microservices-design-open-1.md)
 - [Sync vs async — Open 1](sync-vs-async-open-1.md)
-- [Versioning APIs & events — MCQ 1](versioning-apis-events-mcq-1.md)
+- [Versioning APIs & events — MCQ 1](versioning-apis-events-mcq-1.md)- [Microservices Patterns — Open (Real-World Focus)](microservices-patterns-open.md)
