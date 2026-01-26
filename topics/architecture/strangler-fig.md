@@ -93,7 +93,7 @@ updated_at: 2026-01-26
 
 ## Failure modes / Edge cases
 1. **Dual-write drift:** Legacy and new service DBs diverge.
-   - *Mitigation:* Use [Outbox pattern](outbox-pattern.md) or CDC; reconcile periodically.
+   - *Mitigation:* Use [Outbox pattern](outbox-pattern.md) or CDC; [reconcile](../operations/data-reconciliation.md) periodically.
 2. **Routing complexity explodes:** 100s of if-else rules in gateway.
    - *Mitigation:* Use declarative routing (config-driven); refactor incrementally.
 3. **Hidden dependencies:** New service calls legacy, creating tight coupling.
@@ -173,7 +173,7 @@ Strangler Fig is **almost always used with:**
 - **Incremental > Big Bang:** Reduce risk, deliver value continuously.
 - Use [API Gateway](../system-design/api-gateway.md) for routing.
 - Use [ACL](anti-corruption-layer.md) to protect new services from legacy models.
-- Plan data migration carefully (dual-write, CDC, reconciliation).
+- Plan data migration carefully (dual-write, CDC, [reconciliation](../operations/data-reconciliation.md)).
 - Set **migration deadline** to avoid zombie legacy.
 
 ## Trap questions (with answers)

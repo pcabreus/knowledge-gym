@@ -36,7 +36,7 @@ updated_at: 2026-01-19
 
 ## Decision rules (When to use / When not to use)
 ### Use it when
-- You can reconcile inconsistencies later.
+- You can [reconcile](../operations/data-reconciliation.md) inconsistencies later.
 ### Avoid it when
 - You need strong consistency across systems.
 
@@ -64,7 +64,7 @@ updated_at: 2026-01-19
 
 ## Implementation notes (if applicable)
 - **Checklist**
-  - [ ] Build reconciliation process
+  - [ ] Build [reconciliation](../operations/data-reconciliation.md) process
   - [ ] Add retries with backoff
 
 ## Mini example (if applicable)
@@ -85,7 +85,7 @@ N/A
 2) **Q:** Can retries fix all issues?
    - **A:** no; retries can still fail or duplicate.
 3) **Q:** Is dual-write acceptable for critical data?
-   - **A:** usually not without reconciliation.
+   - **A:** usually not without [reconciliation](../operations/data-reconciliation.md).
 
 ### Quick self-check (5 items)
 - [ ] I can define dual-write.

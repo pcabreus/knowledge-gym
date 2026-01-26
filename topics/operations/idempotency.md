@@ -60,7 +60,7 @@ updated_at: 2026-01-22
 
 ### Alternatives
 - **Exactly-once platform features:** only when the boundary matches your need.
-- **Manual reconciliation:** sometimes acceptable for analytics pipelines.
+- **Manual [reconciliation](data-reconciliation.md):** sometimes acceptable for analytics pipelines.
 - **How to choose:** prefer idempotency as the default; treat EOS as a limited optimization.
 
 ## Failure modes & Pitfalls

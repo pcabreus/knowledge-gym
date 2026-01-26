@@ -163,6 +163,7 @@
 - [Timeouts](operations/timeouts.md)
 - [Retries and Backoff](operations/retries-and-backoff.md)
 - [Idempotency](operations/idempotency.md)
+- [Data Reconciliation](operations/data-reconciliation.md)
 - [Graceful Degradation](operations/graceful-degradation.md)
 - [Service Discovery](operations/service-discovery.md)
 - [Sidecar Pattern](operations/sidecar.md)

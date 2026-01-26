@@ -336,9 +336,36 @@ Answer each question in **3-5 minutes** (interview format). Focus on BLUF (Botto
 
 ---
 
+## Data Reconciliation
+
+### Q27: You have an event-driven system (Outbox + Idempotency). Events are reliable, duplicates are handled. Why would you still need reconciliation? Give a real failure scenario.
+
+**Expected coverage:**
+- Problem: edge cases (bugs, infrastructure failures, race conditions)
+- Example: payment succeeds but event publish fails (rare outbox bug)
+- Example: consumer crashes mid-processing (idempotency key saved but DB update failed)
+- Reconciliation detects drift: order PAID but payment missing
+- When: periodic (hourly) + on-demand (after timeout)
+- Combine with: Outbox (reduce drift), Idempotency (safe fixes), Observability
+
+---
+
+### Q28: After a timeout on a payment API call, should you retry immediately or reconcile first? Explain your reasoning and the flow.
+
+**Expected coverage:**
+- Problem: timeout = unknown state (payment may have succeeded)
+- Don't retry POST blindly (risk double charge)
+- Reconcile first: GET /payments/{idempotencyKey} to check status
+- If "Processing" → poll/wait (don't retry)
+- If "Success" → mark order paid (no retry)
+- If "Failed" or 404 → safe to retry POST
+- Combine with: Idempotency (safe status check), Timeout, Observability
+
+---
+
 ## Meta-Questions (Pattern Selection)
 
-### Q27: Your team wants to use every pattern in this list. Why is this a bad idea? How do you decide which patterns to use?
+### Q29: Your team wants to use every pattern in this list. Why is this a bad idea? How do you decide which patterns to use?
 
 **Expected coverage:**
 - Over-engineering: patterns add complexity
@@ -352,7 +379,7 @@ Answer each question in **3-5 minutes** (interview format). Focus on BLUF (Botto
 
 ---
 
-### Q28: Rank these in order of importance for a production microservices system: (1) Timeout, (2) API versioning, (3) CQRS, (4) Circuit Breaker, (5) Observability. Justify your ranking.
+### Q30: Rank these in order of importance for a production microservices system: (1) Timeout, (2) API versioning, (3) CQRS, (4) Circuit Breaker, (5) Observability. Justify your ranking.
 
 **Expected coverage:**
 - Ranking (typical):

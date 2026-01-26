@@ -258,13 +258,15 @@ If payment fails:
 1. **[Outbox](../architecture/outbox-pattern.md):** Atomic event publishing
 2. **[Retry](../operations/retries-and-backoff.md):** Retry failed consumers
 3. **[Idempotency](../operations/idempotency.md):** Deduplicate events
-4. **[Observability](../operations/observability-basics.md):** Monitor event lag, DLQ depth
+4. **[Data Reconciliation](../operations/data-reconciliation.md):** Detect and fix drift
+5. **[Observability](../operations/observability-basics.md):** Monitor event lag, DLQ depth
 
 **Implementation:**
 - Producer writes to DB + outbox table in same transaction
 - Relay process publishes from outbox → Kafka
 - Consumer uses idempotency key to dedupe
 - Dead-letter queue for poison messages
+- Periodic reconciliation catches edge cases (lost events, bugs)
 
 ---
 
@@ -345,12 +347,12 @@ Phase 5: Decommission monolith
 | Abuse / DDoS | Rate Limiting + API Gateway + Timeout |
 | Partial outage | Graceful Degradation + Circuit Breaker + Caching |
 | Chatty client | API Composition + BFF |
-| Multi-service transaction | Saga + Outbox + Idempotency |
+| Multi-service transaction | Saga + Outbox + Idempotency + Reconciliation |
 | Cross-service query | API Composition OR CQRS |
 | Legacy integration | ACL + Strangler Fig + Circuit Breaker |
 | Different client needs | BFF (one per client) + API Gateway |
 | Dynamic endpoints | Service Discovery + Health Checks |
-| Event reliability | Outbox + Retry + Idempotency + DLQ |
+| Event reliability | Outbox + Retry + Idempotency + Reconciliation + DLQ |
 
 ---
 
