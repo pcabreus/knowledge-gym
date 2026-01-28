@@ -49,6 +49,7 @@
 ### Indexing & query planning
 - [Index](databases/index.md)
 - [B-Tree index](databases/btree-index.md)
+- [BRIN index](databases/brin-index.md)
 - [GiST](databases/gist-index.md)
 - [Selectivity](databases/selectivity.md)
 - [EXPLAIN](databases/explain.md)
@@ -109,6 +110,27 @@
 - [Rate Limiting](system-design/rate-limiting.md)
 - [Versioning APIs and Events](system-design/versioning-apis-and-events.md)
 - [Sync vs Async Communication](system-design/sync-vs-async-communication.md)
+
+### System Design Archetypes
+- [System Design Archetypes (Overview)](system-design/system-design-archetypes.md)
+- [High-Throughput Event Ingestion](system-design/archetype-event-ingestion.md)
+- [Time-Series Aggregation](system-design/archetype-time-series-aggregation.md)
+- [Materialized Views / CQRS](system-design/archetype-materialized-views.md)
+- [Distributed Caching](system-design/archetype-distributed-caching.md)
+- [Rate Limiting & Quotas](system-design/archetype-rate-limiting-quotas.md)
+- [Idempotency & Deduplication](system-design/archetype-idempotency-dedup.md)
+- [Fan-Out / Broadcast Delivery](system-design/archetype-fan-out.md)
+- [Workflow Orchestration](system-design/archetype-workflow-orchestration.md)
+- [Concurrency Control](system-design/archetype-concurrency-control.md)
+- [Ordering Guarantees](system-design/archetype-ordering-guarantees.md)
+- [Hot Partition / Celebrity Problem](system-design/archetype-hot-partition.md)
+- [Search & Indexing Pipeline](system-design/archetype-search-indexing.md)
+- [Multi-Tenancy & Isolation](system-design/archetype-multi-tenancy.md)
+- [Multi-Region Replication](system-design/archetype-multi-region.md)
+- [Data Retention & Lifecycle](system-design/archetype-data-retention.md)
+- [External Integrations](system-design/archetype-external-integrations.md)
+- [Real-Time Communication](system-design/archetype-real-time-communication.md)
+- [Security & Access Control](system-design/archetype-security-access-control.md)
 
 ## Architecture
 - [Messaging basics](architecture/messaging-basics.md)
