@@ -9,6 +9,7 @@
 - [PostgreSQL bloat](databases/postgresql-bloat.md)
 - [PostgreSQL isolation levels](databases/postgresql-isolation-levels.md)
 - [PostgreSQL statistics & ANALYZE](databases/postgresql-stats-and-analyze.md)
+- [PostgreSQL scaling playbook](databases/postgresql-scaling-playbook.md)
 - [JSONB](databases/jsonb.md)
 - [GIN index](databases/gin-index.md)
 

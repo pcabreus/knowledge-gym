@@ -21,7 +21,7 @@ updated_at: 2026-01-22
 
 ## Definition
 **What it is:** A resilience pattern that transitions between **closed** (normal calls), **open** (fail fast), and **half-open** (probe) based on recent failures.
-**Key terms:** closed/open/half-open, failure threshold, probe, fallback.
+**Key terms:** closed/open/half-open, failure threshold, probe, fallback, fault tolerance (tolerancia a fallos).
 
 ## Why it matters
 - Prevents retry storms and protects shared resources (threads, DB pools).

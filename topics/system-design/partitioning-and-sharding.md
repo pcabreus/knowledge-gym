@@ -20,8 +20,8 @@ updated_at: 2026-01-19
 - Trade-off: more complex queries and operations.
 
 ## Definition
-**What it is:** Techniques to distribute data across partitions and servers.
-**Key terms:** partition key, shard, consistent hashing.
+**What it is:** Techniques to split data by key and (optionally) distribute it across nodes. Partitioning can be within one database; sharding is partitioning across multiple databases/servers.
+**Key terms:** partition key, shard, consistent hashing, replication.
 
 ## Why it matters
 - It enables horizontal scalability.
@@ -32,7 +32,8 @@ updated_at: 2026-01-19
 **Out of scope / NOT solved by this:** replication strategies.
 
 ## Mental model / Intuition
-- Partitioning is splitting; sharding is splitting across machines.
+- Partitioning is splitting inside one system; sharding is splitting across machines.
+- Replication is different: it copies the same data for availability/read scale, not distribution.
 
 ## Decision rules (When to use / When not to use)
 ### Use it when
@@ -101,4 +102,5 @@ N/A
 - [Hot partitions](../databases/hot-partitions.md)
 
 ### Compare with
+- (TODO) Replication basics — replication copies data; sharding distributes it.
 - [Consistent hashing](../databases/consistency-models.md) — hash vs replica consistency.
