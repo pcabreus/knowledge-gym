@@ -103,6 +103,7 @@
 - [Distributed systems basics](system-design/distributed-systems-basics.md)
 - [Backpressure](system-design/backpressure.md)
 - [Partitioning & sharding](system-design/partitioning-and-sharding.md)
+- [Scaling Reads](system-design/scaling-reads.md)
 - [CAP theorem (practical)](system-design/cap-theorem.md)
 - [PACELC](system-design/pacelc.md)
 - [API design basics](system-design/api-design-basics.md)
