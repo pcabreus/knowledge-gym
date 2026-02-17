@@ -7,19 +7,18 @@ This repo is my **living learning system** to master software engineering concep
 2) **Long-term retention**: the content is designed for practice with questions, evaluation, and periodic review (later: gamification + scheduling).
 
 ## How it’s used today (version 1: static Markdown)
-- Topics live in `topics/` organized by categories.
-- Each topic follows a common structure (see `templates/topic.template.md`).
-- No duplicated explanations: navigate with links between concepts.
-- Questions and sets (if any) live in `questions/`.
+ Topics live in `topics/` organized by categories (including a dedicated `aws/` section for AWS services).
+ Each topic follows a common structure (see `templates/topic.template.md`).
+ No duplicated explanations: navigate with links between concepts.
+ Assessments (MCQ, open, problem-solving) live in `assessments/`.
 
 ## Philosophy: “Graph, not encyclopedia”
-A concept depends on others. Example:
-- `GIN index` depends on `index`, `PostgreSQL`, `JSONB`.
-Instead of repeating index or JSONB theory, we link to those topics.
-
-## Repo structure
+ `topics/`: topic cards (with subfolders by category, including `aws/`)
+ `assessments/`: MCQ, open, and problem-solving question banks
+ `templates/`: templates
+ `prompts/`: strict prompts to generate and evaluate content
 - `docs/`: vision, rules, taxonomy, authoring guide
-- `topics/`: topic cards
+ Assessments and sets (if any) live in `assessments/`.
 - `questions/`: question banks
 - `templates/`: templates
 - `prompts/`: strict prompts to generate and evaluate content

@@ -157,6 +157,13 @@
 - [Kafka](architecture/kafka.md)
 - [RabbitMQ vs Kafka](architecture/rabbitmq-vs-kafka.md)
 
+## AWS
+- [Lambda](aws/lambda.md)
+- [Step Functions](aws/step-functions.md)
+- [AppSync](aws/appsync.md)
+- [SQS FIFO](aws/sqs-fifo.md)
+- [IAM (AWS)](aws/iam.md)
+
 ## Operations
 - [Scheduled cleanup jobs](operations/scheduled-cleanup-jobs.md)
 - [Maintenance windows](operations/maintenance-windows.md)

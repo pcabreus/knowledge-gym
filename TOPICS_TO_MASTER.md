@@ -25,42 +25,60 @@ Keep one canonical topic per concept. Avoid duplication by linking.
 - Reliability in Go: idempotency keys, retry backoff with jitter, rate limiting implementations
 
 ## C) API design & distributed systems
-- REST API design: resources, methods, status codes, pagination, versioning, deprecations
-- Idempotency semantics: GET vs PUT vs POST
-- Authentication vs authorization
-- JWT, Bearer tokens, headers, sessions
-- Email verification: magic links vs OTP codes (abuse cases, UX)
-- Rate limiting: token bucket/leaky bucket, 429 strategy, quotas
-- Load balancing: L4 vs L7, sticky sessions, health checks
-- Partitioning & scaling: sharding, partition keys, consistent hashing
-- Caching: TTL, invalidation, cache-aside vs write-through, short-lived caching
-- [Backpressure](topics/system-design/backpressure.md): bounded concurrency, queues, overload protection, graceful degradation
-- Consistency models: strong vs eventual, read-after-write, monotonic reads
-- CAP theorem (practical)
+## C) API design & distributed systems
+ REST API design: resources, methods, status codes, pagination, versioning, deprecations
+ Idempotency semantics: GET vs PUT vs POST
+ Authentication vs authorization
+ JWT, Bearer tokens, headers, sessions
+ Email verification: magic links vs OTP codes (abuse cases, UX)
+ Rate limiting: token bucket/leaky bucket, 429 strategy, quotas
+ Load balancing: L4 vs L7, sticky sessions, health checks
+ Partitioning & scaling: sharding, partition keys, consistent hashing
+ Caching: TTL, invalidation, cache-aside vs write-through, short-lived caching
+ [Backpressure](topics/system-design/backpressure.md): bounded concurrency, queues, overload protection, graceful degradation
+ [Versioning and Deprecations](topics/system-design/versioning-and-deprecations.md)
+ [Short-lived Caching](topics/system-design/short-lived-caching.md)
+ [Matching & Enrichment Workflows](topics/system-design/matching-enrichment-workflows.md)
+ [GraphQL](topics/system-design/graphql.md)
+ [Server-Sent Events (SSE)](topics/system-design/server-sent-events.md)
 
 ## D) Databases & data modeling
-- SQL foundations: joins (inner/left), indexes, query planning
-- PostgreSQL: EXPLAIN, index types (B-tree, GIN, GiST), JSONB, transactions, locks, deadlocks
-- Normalization vs denormalization
-- NoSQL: key-value access patterns, trade-offs vs SQL
-- DynamoDB: single-table design, PK/SK, GSIs/LSIs, hot partitions, TTL, streams, consistency
-- ACID properties; constraints vs enforcing in app
+ SQL foundations: joins (inner/left), indexes, query planning
+ PostgreSQL: EXPLAIN, index types (B-tree, GIN, GiST), JSONB, transactions, locks, deadlocks
+ Normalization vs denormalization
+ NoSQL: key-value access patterns, trade-offs vs SQL
+ DynamoDB: single-table design, PK/SK, GSIs/LSIs, hot partitions, TTL, streams, consistency
+ ACID properties; constraints vs enforcing in app
+ Performance topics: read/write contention, connection pooling, slow query diagnosis
+ [Contract Testing](topics/quality/contract-testing.md)
+ [Integration Testing](topics/quality/integration-testing.md)
 - Performance topics: read/write contention, connection pooling, slow query diagnosis
-
 ## E) Event-driven architecture & messaging
-- Event-driven patterns (core)
-- Kafka (Confluent): partitions, keys, ordering, consumer groups, offsets, delivery semantics
-- SQS/SNS (incl. FIFO): ordering, dedup, visibility timeout, DLQ
-- RabbitMQ vs Kafka (conceptual differences)
-- Outbox pattern, CDC concepts
-- Retry strategy: exponential backoff, jitter, [Retry budgets](topics/operations/retry-budgets.md)
-- [Adaptive concurrency](topics/operations/adaptive-concurrency.md)
+ Event-driven patterns (core)
+ Kafka (Confluent): partitions, keys, ordering, consumer groups, offsets, delivery semantics
+ SQS/SNS (incl. FIFO): ordering, dedup, visibility timeout, DLQ
+ RabbitMQ vs Kafka (conceptual differences)
+ Outbox pattern, CDC concepts
+ Retry strategy: exponential backoff, jitter, [Retry budgets](topics/operations/retry-budgets.md)
+ [Adaptive concurrency](topics/operations/adaptive-concurrency.md)
+ [Request hedging](topics/operations/request-hedging.md)
+ DLQ operations: replay process + RCA workflow
+ [SQS FIFO](topics/aws/sqs-fifo.md)
+ [AppSync](topics/aws/appsync.md)
+ [Step Functions](topics/aws/step-functions.md)
+ [Lambda](topics/aws/lambda.md)
+ [IAM (AWS)](topics/aws/iam.md)
 - [Request hedging](topics/operations/request-hedging.md)
-- DLQ operations: replay process + RCA workflow
-
-## F) Resilience & reliability engineering
-- Idempotency (HTTP + message processing)
-- Retries: what/when to retry, when not to retry
+## F) Observability, DevEx, and CI/CD
+ Datadog APM/logs/traces (concepts + practice)
+ RED & USE methodologies
+ Structured logging: trace IDs, correlation IDs
+ Metrics strategy: latency percentiles, error rate, saturation
+ Alerting: actionable alerts vs noise
+ [Datadog APM](topics/operations/datadog-apm.md)
+ [RED/USE Dashboards](topics/operations/red-use-dashboards.md)
+ [Bazel Monorepo](topics/quality/bazel-monorepo.md)
+ [GitHub Actions](topics/quality/github-actions.md)
 - Circuit breaker: states, thresholds, half-open behavior
 - Timeouts: budgets, [Cascading failure](topics/operations/cascading-failure.md)
 - [Bulkheads](topics/operations/bulkheads.md)
