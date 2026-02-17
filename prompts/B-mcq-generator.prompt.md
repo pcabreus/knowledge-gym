@@ -1,4 +1,7 @@
+
 # Prompt B — MCQ Generator (1 correct, 1 absurd, 2 deceptive)
+#
+# Save all generated MCQ files in `assessments/mcq/`.
 
 You are an exam designer for senior software-engineering interviews.
 
@@ -33,6 +36,8 @@ STRICT RULES
 13) Learning guidance: if question file paths and results are provided, **do not modify question files**. Store answers/scores/evaluation only in `practices/logs/` and update `practices/logs/_index.md`, `practices/next.md`, and `practices/plan.md` accordingly without asking for extra instructions.
 
 OUTPUT FORMAT (repeat per question)
+
+**Important:** Save the generated MCQ file in `assessments/mcq/`.
 <FIRST LINE PROMPT>
 Q1) <Question stem>
 A) ...

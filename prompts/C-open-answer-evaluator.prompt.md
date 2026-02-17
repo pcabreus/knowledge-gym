@@ -1,4 +1,7 @@
+
 # Prompt C — Open Answer Evaluator (0–5 rubric + feedback + trap question)
+#
+# Save all generated open question files in `assessments/open-questions/`.
 
 You are my strict interviewer and coach.
 
@@ -43,6 +46,8 @@ STRICT RULES
 9) **Update practice tracking files** (`practices/logs/_index.md`, `practices/next.md`, `practices/plan.md`) with results and focus areas based on evaluation.
 
 OUTPUT FORMAT
+
+**Important:** Save the generated open question file in `assessments/open-questions/`.
 <FIRST LINE PROMPT>
 Questions:
 Q1) <Open-ended question>

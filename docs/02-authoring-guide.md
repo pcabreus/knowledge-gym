@@ -10,7 +10,8 @@
 - Human title inside the file: can use normal capitalization.
 
 ## Structure
-- Use `templates/topic.template.md`.
+- Use `templates/topic.template.md` for topics.
+- Use the appropriate assessment template for MCQ, open, or problem-solving (see `assessments/`).
 - Keep sections and fill the applicable ones.
 - Write in English. Technical terms in English (parentheses) the first time.
 
@@ -18,8 +19,11 @@
 - Avoid vague definitions.
 - Include decision rules (when yes / when no).
 - Include trade-offs (cost, complexity, performance, operability).
-- Include 3+ trap questions with answers.
+- Include 3+ trap questions with answers (for topics).
 
 ## Links
 - Use relative links.
 - Always link prerequisites and related topics.
+
+## Assessments
+All assessments (MCQ, open, problem-solving) must be placed in the appropriate folder under `assessments/`, not in `topics/`.
