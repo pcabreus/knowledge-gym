@@ -149,6 +149,7 @@
 - [Lambda architecture](architecture/lambda-architecture.md)
 - [Kappa architecture](architecture/kappa-architecture.md)
 - [Saga pattern](architecture/saga-pattern.md)
+ - [Two-Stage Retrieval](architecture/two-stage-retrieval.md)
 - [Dual-write pattern](architecture/dual-write-pattern.md)
 - [Outbox pattern](architecture/outbox-pattern.md)
 - [Backend for Frontend (BFF)](architecture/backend-for-frontend.md)
