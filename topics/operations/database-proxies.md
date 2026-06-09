@@ -99,6 +99,7 @@ N/A
 
 ### Related topics
 - [Connection pooling](../databases/connection-pooling.md)
+- [PgBouncer](../databases/pgbouncer.md) — concrete PostgreSQL connection pooler.
 
 ### Compare with
 - [Connection pooling](../databases/connection-pooling.md) — proxy pooling vs client pooling.
